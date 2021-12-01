@@ -1,6 +1,10 @@
 def target_shift(jam_kerja,cavity,ct):
 	return 3600*jam_kerja*cavity/ct
 
+def target_jam(cav,ct):
+	return 3600*cav/ct
+
+
 def totalProd(ok,ng,after,before):
 	return ok+ng+after-before
 
