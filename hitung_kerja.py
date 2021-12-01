@@ -15,6 +15,15 @@ def workTime(ok,ng,af,be,ct,cav):
 	mnt = float(mnt)*60
 	return hasil[0] + ' Jam, ' + str (int(mnt)) + ' Menit'
 
+def selisih_jam(jam_kerja,mulai_mesin):
+	# 9:45
+	jamK = jam_kerja[0]
+	jamM = mulai_mesin[0]
+	menitM = mulai_mesin[-2::1]
+	jam = int(jamK) - int(jamM) 
+	menit = 60 - int(menitM)
+	return str(jam) + str(menit)
+
 ok = 6500
 ng = 19
 after = 506
